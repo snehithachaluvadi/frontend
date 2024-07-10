@@ -1,0 +1,67 @@
+.contact-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contactus {
+    text-align: center;
+}
+
+.address-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.address-box {
+    background-color:#f0ebe9;
+    border: 2px solid rgb(54, 52, 52);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    color: rgb(54, 52, 52);
+    width: 280px;
+    /* Adjusted width */
+    transition: background-color 0.3s ease;
+    /* Added transition effect */
+}
+
+/* .address-box:hover {
+    background-color: #ffedf5;
+    /* Highlight background on hover */
+ */
+
+.doctor-symbol {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.address-box h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.address-box p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.address-box p.phone,
+.address-box p.email {
+    font-size: 14px;
+    margin: 5px 0;
+    cursor: pointer;
+    /* Add pointer cursor on hover */
+    transition: color 0.3s ease;
+    /* Added transition effect */
+}
+
+.address-box p.phone:hover,
+.address-box p.email:hover {
+    color: #eb7f5e;
+    /* Highlight text color on hover */
+}
