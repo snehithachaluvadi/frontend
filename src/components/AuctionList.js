@@ -10,7 +10,7 @@ const AuctionList = () => {
     useEffect(() => {
         const fetchAuctions = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/auctionRoute/', {
+                const response = await axios.get('https://auc-sys-1.onrender.com/auctionRoute/', {
                     headers: { 'Authorization': localStorage.getItem('token') }
                 });
                 setAuctions(response.data);
@@ -24,7 +24,7 @@ const AuctionList = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:8000/auctionRoute/delete-auction/${id}`, {
+            await axios.delete(`https://auc-sys-1.onrender.com/auctionRoute/delete-auction/${id}`, {
                 headers: { 'Authorization': localStorage.getItem('token') }
             });
             setAuctions(auctions.filter(auction => auction._id !== id));

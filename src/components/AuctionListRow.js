@@ -7,7 +7,7 @@ const AuctionListRow = (props) => {
 
   const handleClick = () => {
     console.log("**** Handleclickdelete")
-    Axios.delete(`http://localhost:8000/auctionRoute/delete-auction/${_id}`, {
+    Axios.delete(`https://auc-sys-1.onrender.com/auctionRoute/delete-auction/${_id}`, {
       headers: { 'Authorization': localStorage.getItem('token') }
     })
       .then((res) => {

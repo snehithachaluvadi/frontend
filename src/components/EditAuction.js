@@ -15,7 +15,7 @@
 //   useEffect(() => {
 //     const fetchData = async () => {
 //       try {
-//         const response = await axios.get(`http://localhost:8000/auctionRoute/update-auction/${id}`, {
+//         const response = await axios.get(`https://auc-sys-1.onrender.com/auctionRoute/update-auction/${id}`, {
 //           headers: { 'Authorization': localStorage.getItem('token') }
 //         });
 //         const auction = response.data;
@@ -33,7 +33,7 @@
 
 //   const handleEditAuction = async () => {
 //     try {
-//       await axios.put(`http://localhost:8000/auctionRoute/update-auction/${id}`, {
+//       await axios.put(`https://auc-sys-1.onrender.com/auctionRoute/update-auction/${id}`, {
 //         title,
 //         description,
 //         startingBid,
@@ -112,7 +112,7 @@ const EditAuction = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/auctionRoute/update-auction/${id}`, {
+        const response = await axios.get(`https://auc-sys-1.onrender.com/auctionRoute/update-auction/${id}`, {
           headers: { 'Authorization': localStorage.getItem('token') }
         });
         const { title, description, startingBid, startDate, endDate } = response.data;
@@ -126,7 +126,7 @@ const EditAuction = () => {
 
   const handleEditAuction = async () => {
     try {
-      await axios.put(`http://localhost:8000/auctionRoute/update-auction/${id}`, {
+      await axios.put(`https://auc-sys-1.onrender.com/auctionRoute/update-auction/${id}`, {
         title: auction.title,
         description: auction.description,
         startingBid: auction.startingBid,

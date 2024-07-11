@@ -21,7 +21,7 @@ const CreateAuction = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:8000/auctionRoute/create-auction', {
+      const response = await axios.post('https://auc-sys-1.onrender.com/auctionRoute/create-auction', {
         title,
         description,
         startingBid,

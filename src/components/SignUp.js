@@ -21,7 +21,7 @@ const SignUp = () => {
     }
 
     axios
-      .post('http://localhost:8000/signup', { username, password, userType })
+      .post('https://auc-sys-1.onrender.com/signup', { username, password, userType })
       .then((response) => {
         if (response.data === 'User added!') {
           navigate("/create-auction")
